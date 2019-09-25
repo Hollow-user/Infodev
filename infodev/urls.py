@@ -1,0 +1,1 @@
+from django.urls import pathfrom .views import *urlpatterns = [    path('', PageOne.as_view(), name='main_url'),    path('device/', DeviceView.as_view()),    path('add_device/', AddDevice.as_view(), name='add_device_url'),    path('device/<int:id>', OneDevice.as_view(), name='device_url'),    path('message/', MessageView),   ]

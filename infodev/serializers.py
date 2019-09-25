@@ -1,0 +1,1 @@
+from rest_framework import serializersfrom .models import *class DeviceSerializer(serializers.ModelSerializer):    class Meta:        model = CommunicationDevice        fields = (            'device_type',            'address',            'latitude',            'longitude',            'radius',            'active'        )

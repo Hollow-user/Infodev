@@ -1,0 +1,1 @@
+from django import formsfrom .models import *class DeviceForm(forms.ModelForm):    class Meta:        model = CommunicationDevice        fields = ('device_type', 'address', 'latitude', 'longitude', 'radius', 'active')
