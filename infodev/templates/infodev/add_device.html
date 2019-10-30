@@ -1,1 +1,16 @@
-{% extends 'infodev/base.html' %}{% block title %}    Добавление устройства{% endblock %}{% block content %}    <h1>Новое устройство</h1>    <form method="POST" class="post-form">{% csrf_token %}        {{ form.as_p }}        <button type="submit" class="btn btn-success ml-2">Добавить</button>    </form>{% endblock %}
+
+{% extends 'infodev/base.html' %}
+
+{% block title %}
+    Добавление устройства
+{% endblock %}
+
+{% block content %}
+
+    <h1>Новое устройство</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success ml-2">Добавить</button>
+    </form>
+
+{% endblock %}
